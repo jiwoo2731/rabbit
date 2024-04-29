@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<script>
+    const numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76]
+    const oddNumbers = numbers.filter(function (value){
+        return value % 2 ===1
+    })
+
+    const underNumbers = numbers.filter(function (value){
+        return value <= 100
+    })
+
+    const fiveNumbers = numbers.filter(function (value){
+        return value  % 5 ===0
+    })
+
+
+    console.log(`홀수만 추출: ${oddNumbers}`)
+    console.log(`100아래 추출: ${underNumbers}`)
+    console.log(`5나머지0 추출: ${fiveNumbers}`)
+
+
+</script>
+<body>
+    
+</body>
+</html>
